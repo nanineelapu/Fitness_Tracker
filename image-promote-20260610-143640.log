@@ -1,0 +1,7 @@
+2026-06-10 14:36:40,465 [INFO] ==================================================
+2026-06-10 14:36:40,465 [INFO] IMAGE PROMOTION STARTED
+2026-06-10 14:36:40,465 [INFO] Source: nanineelapu/fitness-tracker:latest
+2026-06-10 14:36:40,465 [INFO] Target: nanineelapu/fitness-tracker:staging-1.0.0
+2026-06-10 14:36:40,465 [INFO] ==================================================
+2026-06-10 14:36:40,465 [INFO] Step 1/4 — Docker Hub login
+2026-06-10 14:36:40,465 [INFO] Running: docker [hidden]

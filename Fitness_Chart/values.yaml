@@ -1,0 +1,39 @@
+# Default values — Development environment
+
+replicaCount: 1
+
+image:
+  repository: nanineelapu/fitness-tracker
+  tag: "latest"
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 5000
+
+config:
+  nodeEnv: "development"
+  port: "5000"
+  mongodbUri: "mongodb://mongodb-service:27017/fitnessdb"
+
+mongodb:
+  enabled: true
+  replicaCount: 1
+  image: mongo:6.0
+  storageSize: 5Gi
+  storageClass: gp2
+
+gateway:
+  enabled: true
+  gatewayClassName: nginx-gateway-class
+
+resources:
+  requests:
+    memory: "128Mi"
+    cpu: "100m"
+  limits:
+    memory: "256Mi"
+    cpu: "500m"
+
+namespace: fitness-tracker
