@@ -12,3 +12,8 @@ keywords:
   - mongodb
   - kubernetes
 
+name: fitness-tracker
+description: A Helm chart for the Fitness Tracker app (Node.js + MongoDB on EKS)
+type: application
+version: 1.0.0
+appVersion: "1.0.0"
